@@ -23,9 +23,9 @@
                     <a href="#">
                         <span class="glyphicon glyphicon-search">&nbsp</span>
                     </a>
-                    Reddit HW Search Flask App
+                     Reddit Manga Discussion Search
                 </h1>
-                <p>Search for items within Reddit HWSwap</p>
+                <p>Search for Discussion Threads within Reddit Manga</p>
             </div>
         </div>
 
@@ -34,7 +34,7 @@
                 <form class="" action="{{ url_for('index')}}" method="post">
                     <label>What are you looking for?</label>
                     <input type="text" class="form-control" name="query" required="required">
-                    <p class="help-block">Enter an item name.</p>
+                    <p class="help-block">Enter a manga name.</p>
                     <button class="btn btn-success" type="submit" name="button">Search</button>
                 </form>
             </div>
@@ -50,10 +50,8 @@
                 <thead>
                     <tr>
                         <th>Title</th>
-                        <th data-sortable="true">Location</th>
-                        <th data-sortable="true">Type of Transaction</th>
-                        <th>Description</th>
-                        <th>URL</th>
+                        <th>Reddit Thread</th>
+                        <th>Manga Link</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -78,8 +76,8 @@
     </div>
     <hr>
     <footer>
-        <p>Repo for this code in <a href="https://github.com/RorixRebel/flask-reddithwswap">Github</a> </p>
-        <p>Site created by: <b>Miguel Valdes</b> </p>
+        <p>Repo for this code in <a href="https://github.com/zbhoy/mangadisc">Github</a> </p>
+        <p>Site created by: <b>Ziyad Dadabhoy, Forked from Miguel Valdes</b> </p>
     </footer>
 
     <!-- Jquery -->
