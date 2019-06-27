@@ -21,6 +21,6 @@ def get_from_reddit(item):
         sort='new',
         time_filter='week')
     for item in reddit_posts:
-        results[item.title] = {'rlink': 'www.redit.com' + item.permalink,
+        results[item.title] = {'rlink': 'www.reddit.com' + item.permalink,
                                'mlink': item.url}
     return results
