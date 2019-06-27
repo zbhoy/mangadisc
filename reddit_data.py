@@ -17,7 +17,7 @@ def get_from_reddit(item):
     results = {}
     reddit = bot_login()
     reddit_posts = reddit.subreddit('manga').search(
-        item,
+        'disc'+item,
         sort='new',
         time_filter='week')
     for item in reddit_posts:
