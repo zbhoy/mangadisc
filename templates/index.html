@@ -63,16 +63,10 @@
                             {{ key | safe }}
                         </td>
                         <td>
-                            {{ value['location'] | safe }}
+                            <a href="{{ value['rlink'] | safe }}" target="_blank">Reddit Thread</a>
                         </td>
                         <td>
-                            {{ value['type'] | safe }}
-                        </td>
-                        <td>
-                            {{ value['text'] | safe }}
-                        </td>
-                        <td>
-                            <a href="{{ value['url'] | safe }}" target="_blank">Take me there!</a>
+                            <a href="{{ value['mlink'] | safe }}" target="_blank">Manga URL</a>
                         </td>
                         {% endfor %}
                     </tr>
