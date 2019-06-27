@@ -61,10 +61,10 @@
                             {{ key | safe }}
                         </td>
                         <td>
-                            <a href="{{ value['mlink'] | safe }}" target="_blank">Manga URL</a>
+                            <a href="{{ value['rlink'] | safe }}" target="_blank">Reddit Thread</a>
                         </td>
                         <td>
-                            <a href="{{ value['rlink'] | safe }}" target="_blank">Reddit Thread</a>
+                            <a href="{{ value['mlink'] | safe }}" target="_blank">Manga URL</a>
                         </td>
                         {% endfor %}
                     </tr>
