@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HW Search Flask</title>
+    <title>RManga Disc Search</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Latest compiled and minified CSS -->
@@ -61,10 +61,10 @@
                             {{ key | safe }}
                         </td>
                         <td>
-                            <a href="{{ value['rlink'] | safe }}" target="_blank">Reddit Thread</a>
+                            <a href="{{ value['mlink'] | safe }}" target="_blank">Manga URL</a>
                         </td>
                         <td>
-                            <a href="{{ value['mlink'] | safe }}" target="_blank">Manga URL</a>
+                            <a href="{{ value['rlink'] | safe }}" target="_blank">Reddit Thread</a>
                         </td>
                         {% endfor %}
                     </tr>
